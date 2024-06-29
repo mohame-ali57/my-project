@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th,td{
+        padding: 10px;
+        border: 2px solid violet;
+    }
+    .row1 , .row1 .col2 ,.row2 , .row3{
+        display: flex;
+    }
+    .row1 .col2{
+        flex-direction: column;
+        width: 70%;
+    }
+    .row1 .col1{
+        width: 25%;
+        margin-right: 10px;
+        padding: 10px;
+        background-color: orange;
+    }
+    .row1 .col1 , .row1 .col2{
+        height: 200px;
+    }
+    input{
+        width: 200px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .row2 div{
+        padding: 10px;
+        border: 2px solid violet;
+       flex-grow: 1;
+    }
+    .row3 div{
+        width: 50%;
+    }
+    .row3 table{
+        width: 90%;
+    }
+  
+</style>
+<body>
+<h1 style="text-align: center;">1 <sup>st</sup> Session<sub>&copy</sub></h1>
+
+<div class="container" style="border: 2px solid violet; width: 70%; margin: 0 auto;">
+    <!-- table 1-->
+    <p style="text-align: center;">table (1)</p>
+    <table style="width: 100%;">
+        <thead>
+        <tr>
+            <th colspan="2" style="background-color: aquamarine;">Links</th>
+            <th style="background-color: aquamarine;">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td >Stack Overflow</td>
+                <td ><a href="https://stackoverflow.com/">https://stackoverflow.com/</a></td>
+                <td style="text-align: center;">...</td>
+            </tr>
+            <tr>
+                <td >W3schools</td>
+                <td ><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></td>
+                <td rowspan="2" style="text-align: center;">...</td>
+            </tr>
+            <tr >
+                <td >Laracasts</td>
+                <td ><a href="https://laracasts.com/">https://laracasts.com/</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3" colspan="3" style="text-align: center;">StockCoders</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row1">
+        <div class="col1">  <h1>Send E-mail (Form):</h1> </div>
+       
+        <div class="col2">
+<label for="">Subject*</label>
+<input type="text" placeholder="enter your user-name">
+<label for="">massage</label>
+<textarea name="" id="" placeholder="enter massage.."></textarea>      
+<label for="">Phone</label>
+<input type="number" name="" id="" placeholder="enter phone..">
+<input type="submit" value=" Send mail" style=" width: 80px; margin-top: 20px; padding: 10px 0px;">
+</div>
+  </div>
+
+  <div class="row2">
+<div class="col1">Stock Coders</div>
+<div class="col2"><a href="stockcoders99@gmail.com">stockcoders99@gmail.com</a></div>
+<div class="col3">Naser City , Cairo , Egypt</div>
+  </div>
+
+  <div class="row3">
+<div class="col1">
+     <!-- table 2-->
+    <p style="text-align: center;">table (2)</p>
+    <table style="border: 4px solid goldenrod;">
+        <tr>
+            <th style="background-color: darkgray;">Name</th>
+            <th style="background-color: darkgray;">Send mail</th>
+            <th style="background-color: darkgray;">Phone</th>
+        </tr>
+        <tr>
+            <td>StockCoders</td>
+            <td><a href="stockcoders99@gmail.com">stockcoders99@gmail.com</a></td>
+            <td>+201146425156</td>
+        </tr>
+    </table>
+</div>
+<div class="col2">
+     <!-- table 3-->
+    <p style="text-align: center;">table (3)</p>
+    <table style="border: 4px solid blue;">
+        <tr>
+            <th style="background-color: darkgray;">Gender</th>
+            <th style="background-color: darkgray;"> created-at</th>
+            <th style="background-color: darkgray;">update-at</th>
+        </tr>
+            <tr>
+            <td>Group</td>
+            <td>17-10-2023</td>
+            <td>18-10-2023</td>
+            </tr>
+    </table>
+</div>
+  </div>
+  <div class="table4">
+     <!-- table 4-->
+    <p style="text-align: center;">table (4)</p>
+<table style="border: 4px solid green; margin: 0 auto;">
+    <tr>
+        <th style="background-color:darkgray;">Account Number</th>
+        <th style="background-color:darkgray;">CCV</th>
+        <th style="background-color:darkgray;">Transactions</th>
+    </tr>
+    <tr>
+        <td rowspan="7">1111 1111 1111 1111</td>
+        <td rowspan="7">000</td>
+        <td rowspan="7">
+            <p style="text-align: center;">table (5)</p>
+            <table style="border: 4px solid red;">
+                <tr>
+                    <th>-</th>
+                    <th>Transaction</th>
+                </tr>
+                <tr>
+                    <td>T1:</td>
+                    <td>t90dkfiau54</td>
+                </tr>
+                <tr>
+                    <td>T2:</td>
+                    <td>kwddkfiau54</td>
+                </tr>
+                <tr>
+                    <td>T3:</td>
+                    <td>mncefisau54</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table> 
+</div>
+</div>
+</body>
+</html>
